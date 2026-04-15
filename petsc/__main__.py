@@ -1,27 +1,40 @@
-from .pricing import PricingEngine
+from __future__ import annotations
 
-def main():
-    print("--- PetSC 宠物托运智能合约模拟系统 ---")
-    
-    # 模拟用户输入的需求
-    req = {
-        "transport_method": "航空托运",
-        "distance": 1200,      # 公里
-        "weight": 10,          # 公斤
-        "is_short_nose": True, # 是否短鼻腔（加倍保险）
-        "need_pickup": True,   # 需要上门接宠
-        "box_type": "2号箱"     # 航空箱类型
-    }
-    
-    print("\n[业务场景]: 自动报价")
-    print(f"托运需求: {req}")
-    
-    engine = PricingEngine()
-    quote = engine.generate_quote(req)
-    
-    print("\n>>> 生成的报价单明细 <<<")
-    for k, v in quote.items():
-        print(f" - {k}: ¥{v}")
+import argparse
+
+from .demo import main as evidence_demo_main
+from .orchestrator_demo import main as orchestrator_demo_main
+from .pricing_demo import main as pricing_demo_main
+from .compensation_demo import main as compensation_demo_main
+
+
+def _build_parser() -> argparse.ArgumentParser:
+    p = argparse.ArgumentParser(prog="python -m petsc", add_help=True)
+    sub = p.add_subparsers(dest="cmd")
+    sub.add_parser("pricing", help="运行模块2：自动报价演示（默认）")
+    sub.add_parser("evidence", help="运行模块5：证据存证与哈希校验演示")
+    sub.add_parser("orchestrator", help="运行模块3：自动履约结算演示（状态机+分段结算）")
+    sub.add_parser("compensation", help="运行模块4：异常检测与智能赔付演示")
+    return p
+
+
+def main() -> None:
+    p = _build_parser()
+    args = p.parse_args()
+    if args.cmd in (None, "pricing"):
+        pricing_demo_main()
+        return
+    if args.cmd == "evidence":
+        evidence_demo_main()
+        return
+    if args.cmd == "orchestrator":
+        orchestrator_demo_main()
+        return
+    if args.cmd == "compensation":
+        compensation_demo_main()
+        return
+    p.print_help()
+
 
 if __name__ == "__main__":
     main()

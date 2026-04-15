@@ -1,0 +1,58 @@
+{
+  "risk": {
+    "risk_flag": true,
+    "risk_type": "短鼻腔",
+    "suggestion": "推荐陆运专车，购买双倍保险"
+  },
+  "fees": {
+    "base_fee": 1108.0,
+    "addon_total": 215.0,
+    "breach_reserve": 132.3,
+    "total_fee": 1455.3
+  },
+  "fee_detail": [
+    {
+      "item": "基础运费",
+      "standard": "航空-按重量+距离计费（北京→上海 1213km，9.6kg）",
+      "amount": 1108.0,
+      "trigger_node": "合约签订"
+    },
+    {
+      "item": "接宠费",
+      "standard": "接宠费：50-100km 50元",
+      "amount": 50.0,
+      "trigger_node": "下单后-揽收前"
+    },
+    {
+      "item": "笼具费",
+      "standard": "笼具费：2号箱",
+      "amount": 50.0,
+      "trigger_node": "揽收时"
+    },
+    {
+      "item": "保险费",
+      "standard": "保险：基础保额2000元（含），每加10.0元加保100元，当前保额2300元",
+      "amount": 30.0,
+      "trigger_node": "合约签订"
+    },
+    {
+      "item": "提货费",
+      "standard": "提货费：按机场实际收费（上海）",
+      "amount": 40.0,
+      "trigger_node": "到达后-交付前"
+    },
+    {
+      "item": "增值服务费",
+      "standard": "增值服务：喂食服务30元、视频加频15元",
+      "amount": 45.0,
+      "trigger_node": "运输中/交付前"
+    },
+    {
+      "item": "违约金预留",
+      "standard": "按总运费的10%预留，不足1元按1元",
+      "amount": 132.3,
+      "trigger_node": "合约签订-冻结"
+    }
+  ],
+  "quote_hash": "092f976ac69b701626a6dadd3ed0ec5054ae3a6ff6e6b8ef2f26d8ebd08a835b"
+}

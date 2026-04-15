@@ -1,0 +1,6 @@
+{
+  "orderId": "PET-20260501-000002",
+  "expected_settlement_after_close_case": { "action": "refund", "amount": 100.0, "node": "争议结案" },
+  "expected_final_status": "COMPLETED"
+}
+

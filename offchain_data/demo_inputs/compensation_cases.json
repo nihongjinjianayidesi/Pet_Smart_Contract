@@ -1,0 +1,104 @@
+{
+  "ts_ms_base": 1710000000000,
+  "order_context": {
+    "orderId": "PET-20260501-000001",
+    "total_fee": 1000.0,
+    "segment_fee": 300.0
+  },
+  "cases": [
+    {
+      "case_id": "delay_24h",
+      "exception_id": "EXP-20260501-000001",
+      "exception_type": "托运延误",
+      "detect_time": 1710000000500,
+      "detect_data": {
+        "planned_arrival": 1710000000000,
+        "actual_arrival": 1710093600000
+      },
+      "decision": "merchant",
+      "basis_data": {
+        "rule": "delay_24h_tier",
+        "note": "延误超24小时，按阶梯退费规则判定商家责任"
+      }
+    },
+    {
+      "case_id": "route_deviation",
+      "exception_id": "EXP-20260501-000002",
+      "exception_type": "路线偏离",
+      "detect_time": 1710000100000,
+      "detect_data": {
+        "planned_route": "A-B",
+        "actual_route": "A-C-B",
+        "deviation": 15.0,
+        "affected_fee_ratio": 1.0
+      },
+      "decision": "merchant",
+      "basis_data": {
+        "rule": "route_deviation_over_10km",
+        "note": "偏离超过10km，未在时限内核验/处置"
+      }
+    },
+    {
+      "case_id": "env_out_of_range",
+      "exception_id": "EXP-20260501-000003",
+      "exception_type": "环境参数超标",
+      "detect_time": 1710000200000,
+      "detect_data": {
+        "temperature": 35.0,
+        "humidity": 60,
+        "ventilation": "normal",
+        "affected_fee_ratio": 0.5
+      },
+      "decision": "merchant",
+      "basis_data": {
+        "rule": "env_threshold_breach",
+        "note": "温度超阈值且未在30分钟内处置"
+      }
+    },
+    {
+      "case_id": "pet_status_abnormal",
+      "exception_id": "EXP-20260501-000004",
+      "exception_type": "宠物状态异常",
+      "detect_time": 1710000300000,
+      "detect_data": {
+        "symptom": "应激反应",
+        "medical_fee": 400.0
+      },
+      "decision": "merchant",
+      "basis_data": {
+        "rule": "status_abnormal_medical",
+        "note": "就医凭证摘要上链后触发医疗费分担+运费补偿"
+      }
+    },
+    {
+      "case_id": "pet_injury_serious",
+      "exception_id": "EXP-20260501-000005",
+      "exception_type": "宠物受伤",
+      "detect_time": 1710000400000,
+      "detect_data": {
+        "injury_level": "重伤",
+        "medical_fee": 500.0
+      },
+      "decision": "merchant",
+      "basis_data": {
+        "rule": "injury_serious",
+        "note": "兽医诊断摘要+监管认定结论"
+      }
+    },
+    {
+      "case_id": "pet_death_market_price",
+      "exception_id": "EXP-20260501-000006",
+      "exception_type": "宠物死亡/丢失",
+      "detect_time": 1710000500000,
+      "detect_data": {
+        "event": "lost",
+        "market_price": 3000.0
+      },
+      "decision": "merchant",
+      "basis_data": {
+        "rule": "death_or_lost_market_price",
+        "note": "死亡/丢失按市场价赔付（示例）"
+      }
+    }
+  ]
+}

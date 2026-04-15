@@ -1,0 +1,60 @@
+{
+  "order": {
+    "orderId": "PET-20260501-000001",
+    "total_fee": 500.0,
+    "total_distance_km": 900,
+    "status": "CREATED",
+    "create_time_ms": 1746220800000
+  },
+  "steps": [
+    {
+      "method": "advance_state",
+      "current_status": "CREATED",
+      "trigger_data": { "signatures_complete": true },
+      "ts": 1746220800000
+    },
+    {
+      "method": "advance_state",
+      "current_status": "CREATED",
+      "trigger_data": { "gps": { "at_pickup": true }, "user_confirm": true },
+      "ts": 1746220801000
+    },
+    {
+      "method": "advance_state",
+      "current_status": "PICKED_UP",
+      "trigger_data": { "departed": true, "env_ok": true },
+      "ts": 1746220802000
+    },
+    {
+      "method": "advance_state",
+      "current_status": "IN_TRANSIT",
+      "trigger_data": { "gps": { "distance": 300, "total_distance": 900 } },
+      "ts": 1746220803000
+    },
+    {
+      "method": "advance_state",
+      "current_status": "IN_TRANSIT",
+      "trigger_data": { "gps": { "distance": 600, "total_distance": 900 } },
+      "ts": 1746220804000
+    },
+    {
+      "method": "advance_state",
+      "current_status": "IN_TRANSIT",
+      "trigger_data": { "arrived": true, "signed": true, "user_confirm": true },
+      "ts": 1746220805000
+    },
+    {
+      "method": "advance_state",
+      "current_status": "DELIVERED",
+      "trigger_data": {},
+      "ts": 1746228005000
+    },
+    {
+      "method": "advance_state",
+      "current_status": "DELIVERED",
+      "trigger_data": {},
+      "ts": 1746825605000
+    }
+  ]
+}
+

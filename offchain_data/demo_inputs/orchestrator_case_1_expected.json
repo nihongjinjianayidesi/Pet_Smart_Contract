@@ -1,0 +1,15 @@
+{
+  "orderId": "PET-20260501-000001",
+  "expected": [
+    { "trigger_node": "合约生效", "old_status": "CREATED", "new_status": "CREATED", "action": "freeze", "amount": 500.0 },
+    { "trigger_node": "接宠确认", "old_status": "CREATED", "new_status": "PICKED_UP", "action": "release", "amount": 100.0 },
+    { "trigger_node": "运输启动", "old_status": "PICKED_UP", "new_status": "IN_TRANSIT", "action": "release", "amount": 150.0 },
+    { "trigger_node": "途中节点1", "old_status": "IN_TRANSIT", "new_status": "IN_TRANSIT", "action": "release", "amount": 75.0 },
+    { "trigger_node": "途中节点2", "old_status": "IN_TRANSIT", "new_status": "IN_TRANSIT", "action": "release", "amount": 75.0 },
+    { "trigger_node": "到达签收", "old_status": "IN_TRANSIT", "new_status": "DELIVERED", "action": null, "amount": null },
+    { "trigger_node": "到达确认", "old_status": "DELIVERED", "new_status": "DELIVERED", "action": "release", "amount": 50.0 },
+    { "trigger_node": "合约完结", "old_status": "DELIVERED", "new_status": "COMPLETED", "action": "release", "amount": 50.0 }
+  ],
+  "released_total": 500.0
+}
+

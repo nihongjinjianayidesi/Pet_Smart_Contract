@@ -1,0 +1,21 @@
+{
+  "ts_ms": 1710000000000,
+  "request": {
+    "pet_type": "法斗",
+    "weight": 9.6,
+    "start": "北京",
+    "end": "上海",
+    "transport_type": "航空",
+    "distance_km": 1213,
+    "pickup_distance_km": 80,
+    "cage": {
+      "type": "2",
+      "self_provided": false
+    },
+    "insurance_premium": 30,
+    "value_added": [
+      "喂食服务",
+      "视频加频"
+    ]
+  }
+}

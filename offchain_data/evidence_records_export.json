@@ -1,0 +1,92 @@
+[
+  {
+    "recordId": "21b72b153da34b68ae4a633cbcb383b3",
+    "orderId": "PET-20260501-000001",
+    "evidenceType": "pet_photo",
+    "hash": "70b084509b820bc660d98a00e8e04888166c05b99b1a4b9cf105f650a4e26abb",
+    "rawDataInfo": {
+      "type": "file",
+      "fileName": "pet_photo.jpg",
+      "filePath": "D:\\PetSC\\PetSC_front\\offchain_data\\demo_inputs\\pet_photo.jpg",
+      "size": 21,
+      "ext": ".jpg"
+    },
+    "submitter": "merchant",
+    "submitTime": 1775944208966,
+    "txId": "b7010f134a4c4d04a70d42e2f233252c",
+    "verifyRecords": [
+      {
+        "ts": 1775944208969,
+        "isValid": true,
+        "localHash": "70b084509b820bc660d98a00e8e04888166c05b99b1a4b9cf105f650a4e26abb",
+        "chainHash": "70b084509b820bc660d98a00e8e04888166c05b99b1a4b9cf105f650a4e26abb"
+      },
+      {
+        "ts": 1775944208974,
+        "isValid": false,
+        "localHash": "055c76831fa158d3a5f8d572feb01d097de8e07752a438be8211167742163270",
+        "chainHash": "70b084509b820bc660d98a00e8e04888166c05b99b1a4b9cf105f650a4e26abb"
+      }
+    ]
+  },
+  {
+    "recordId": "2282cc3f9f7c4cc79e0610b16c6f59e3",
+    "orderId": "PET-20260501-000001",
+    "evidenceType": "pet_photo",
+    "hash": "70b084509b820bc660d98a00e8e04888166c05b99b1a4b9cf105f650a4e26abb",
+    "rawDataInfo": {
+      "type": "file",
+      "fileName": "pet_photo.jpg",
+      "filePath": "D:\\PetSC\\PetSC_front\\offchain_data\\demo_inputs\\pet_photo.jpg",
+      "size": 21,
+      "ext": ".jpg"
+    },
+    "submitter": "merchant",
+    "submitTime": 1775981774413,
+    "txId": "20f6e3ef48004844b6a6ab6aca489fce",
+    "verifyRecords": [
+      {
+        "ts": 1775981774416,
+        "isValid": true,
+        "localHash": "70b084509b820bc660d98a00e8e04888166c05b99b1a4b9cf105f650a4e26abb",
+        "chainHash": "70b084509b820bc660d98a00e8e04888166c05b99b1a4b9cf105f650a4e26abb"
+      },
+      {
+        "ts": 1775981774418,
+        "isValid": false,
+        "localHash": "055c76831fa158d3a5f8d572feb01d097de8e07752a438be8211167742163270",
+        "chainHash": "70b084509b820bc660d98a00e8e04888166c05b99b1a4b9cf105f650a4e26abb"
+      }
+    ]
+  },
+  {
+    "recordId": "474519bd64fc40c499cbd5ea2f577ec2",
+    "orderId": "PET-20260501-000001",
+    "evidenceType": "pet_photo",
+    "hash": "70b084509b820bc660d98a00e8e04888166c05b99b1a4b9cf105f650a4e26abb",
+    "rawDataInfo": {
+      "type": "file",
+      "fileName": "pet_photo.jpg",
+      "filePath": "D:\\PetSC\\PetSC_front\\offchain_data\\demo_inputs\\pet_photo.jpg",
+      "size": 21,
+      "ext": ".jpg"
+    },
+    "submitter": "merchant",
+    "submitTime": 1776016496042,
+    "txId": "aafe303b6ef44ab9af2b6a302f76dbcc",
+    "verifyRecords": [
+      {
+        "ts": 1776016496045,
+        "isValid": true,
+        "localHash": "70b084509b820bc660d98a00e8e04888166c05b99b1a4b9cf105f650a4e26abb",
+        "chainHash": "70b084509b820bc660d98a00e8e04888166c05b99b1a4b9cf105f650a4e26abb"
+      },
+      {
+        "ts": 1776016496047,
+        "isValid": false,
+        "localHash": "055c76831fa158d3a5f8d572feb01d097de8e07752a438be8211167742163270",
+        "chainHash": "70b084509b820bc660d98a00e8e04888166c05b99b1a4b9cf105f650a4e26abb"
+      }
+    ]
+  }
+]

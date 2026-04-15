@@ -1,0 +1,101 @@
+{
+  "cases": [
+    {
+      "case_id": "delay_24h",
+      "exception_id": "EXP-20260501-000001",
+      "decision": {
+        "ts": 1710000002000,
+        "basisHash": "3ff72ace40ce1d241e0517ca79ef6597ec084308d51d8b96ec2e5d8193f21698"
+      },
+      "compensation": {
+        "ts": 1710000003000,
+        "amount": 360.0
+      },
+      "settlement": {
+        "ts": 1710000004000,
+        "amount": 360.0
+      }
+    },
+    {
+      "case_id": "route_deviation",
+      "exception_id": "EXP-20260501-000002",
+      "decision": {
+        "ts": 1710000012000,
+        "basisHash": "b28d3a1d604f07f7f046ce04e19184cd0c6b991f0c0836064bd2d78907469351"
+      },
+      "compensation": {
+        "ts": 1710000013000,
+        "amount": 300.0
+      },
+      "settlement": {
+        "ts": 1710000014000,
+        "amount": 300.0
+      }
+    },
+    {
+      "case_id": "env_out_of_range",
+      "exception_id": "EXP-20260501-000003",
+      "decision": {
+        "ts": 1710000022000,
+        "basisHash": "83ddd683bdf8fd5d1deef59b2dacf3adae38604433afb09979c47033689e253f"
+      },
+      "compensation": {
+        "ts": 1710000023000,
+        "amount": 150.0
+      },
+      "settlement": {
+        "ts": 1710000024000,
+        "amount": 150.0
+      }
+    },
+    {
+      "case_id": "pet_status_abnormal",
+      "exception_id": "EXP-20260501-000004",
+      "decision": {
+        "ts": 1710000032000,
+        "basisHash": "2dafa60846edd09fad8a2f26c876bbcf0c5bfa2b6eeaa5a2dd17842fe4632c37"
+      },
+      "compensation": {
+        "ts": 1710000033000,
+        "amount": 400.0
+      },
+      "settlement": {
+        "ts": 1710000034000,
+        "amount": 400.0
+      }
+    },
+    {
+      "case_id": "pet_injury_serious",
+      "exception_id": "EXP-20260501-000005",
+      "decision": {
+        "ts": 1710000042000,
+        "basisHash": "7a8cadf894e35b2e75b6a6a4fcc55852b143c629e166a6cec42b76b8b4a90ee8"
+      },
+      "compensation": {
+        "ts": 1710000043000,
+        "amount": 1500.0
+      },
+      "settlement": {
+        "ts": 1710000044000,
+        "amount": 1500.0
+      }
+    },
+    {
+      "case_id": "pet_death_market_price",
+      "exception_id": "EXP-20260501-000006",
+      "decision": {
+        "ts": 1710000052000,
+        "basisHash": "1823793780d30e72eea725a5305e62f9111900b0cc683b681ea9e3d8e1a95251"
+      },
+      "compensation": {
+        "ts": 1710000053000,
+        "amount": 3000.0
+      },
+      "settlement": {
+        "ts": 1710000054000,
+        "amount": 3000.0
+      }
+    }
+  ]
+}
+
